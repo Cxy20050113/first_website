@@ -5,6 +5,20 @@
     <title> 
         陈欣怡的第一个网页
     </title>
+    <style>
+        /* 点击后的颜色会通过JavaScript设置 */
+        #demo2{
+            /* 默认颜色不设置，使用浏览器默认文字颜色 */
+            cursor: pointer; /* 鼠标变为手型，提示可点击 */
+        }
+    </style>
+    <script>
+        function showtext() {
+            var element = document.getElementById("demo2");
+            element.innerHTML="喜欢你";
+            element.style.color = "rgb(236, 15, 125)"; // 点击后变为粉色
+        }
+    </script>
     </head>
 
     <body>  
@@ -48,6 +62,8 @@
 <!--// 为缩写HTML做解释 title：在鼠标悬停的时候显示-->
 <abbr title="喜欢你">(≧∇≦)ﾉ</abbr><!--加粗-->
 <br></br>
+<!--点击触发文字：喜欢你-->
+<p id="demo2" onclick="showtext()">(≧∇≦)ﾉ</p>
 <!--下划线-->
 <u> (≧∇≦)ﾉ</u><br></br>
 <!--电脑自动输出-->
